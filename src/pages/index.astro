@@ -4,41 +4,67 @@ import "../styles/layout.css";
 ---
 
 <MainLayout title="Café Karen - KMK">
-  <button id="altFarve">Alt farve</button>
-  <div style="width: 50px; position:absolute;margin-left:-5rem ">
-    <img src="/images/sidebarScreenShot.webp" alt="placeholder sidebar" />
+  <div class="sideBar" style="display:block; width: 45px; position:fixed;margin-left:-5rem">
+    <button id="altFarve">Alt farve</button><img src="/images/sidebarScreenShot.webp" alt="placeholder sidebar" />
   </div>
-  <div style="display:flex;justify-content:space-between">
-    <div>
-      <h3>åbningstider:</h3>
-      <ul><li>mandag:</li><li>tirsdag:</li><li>onsdag:</li><li>torsdag:</li><li>fredag:</li><li>lørdag:</li><li>søndag:</li></ul>
-    </div>
-    <h1>café Karen</h1>
+  <div style=" display:flex;justify-content:flex-end;margin-bottom: -80px;">
+    <h1 style="padding:10px;border-radius:5px;background-color:var(--bgColor);z-index:10;">café <br />karen</h1>
+  </div>
+  <div id="sociale">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-regular fa-envelope"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
   </div>
   <div class="grid-6">
     <div class="info3">
-      <h2>Her skal der stå noget</h2><p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus minima esse omnis, quasi quae impedit culpa ad sunt sequi iusto assumenda molestiae, ut nesciunt, tenetur nihil dicta eaque
-        unde quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque error mollitia qui? Culpa dolorem aliquam eligendi numquam reprehenderit voluptatibus laborum eum iste,
-        quam, amet sint inventore sit laboriosam sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quae cum molestiae laudantium cupiditate ducimus quasi, aperiam earum autem tenetur
-        eaque nihil culpa eos sapiente! Totam qui doloribus nostrum distinctio?
-      </p>
+      <section id="om-cafe-karen">
+        <h2>Om Café Karen</h2>
+        <p>Café Karen er hjørnestenen i Karens Minde Kulturhus, det er et åbent og inkluderende café-mødested med håndlavet mad fra gode råvarer (ca. 80 % økologiske).</p>
+        <p>
+          Hver dag (tirsdag-fredag) serveres åbne rugbrødssandwich, hjemmebag og kager, samt kaffe, limonader, øl og vin. Onsdage byder på vegetarisk gryderet i caféen, og torsdage inviterer caféen
+          til fællesspisning kl. 18.00.
+        </p>
+        <div>
+          <section id="abningstider">
+            <h2>Åbningstider for Café Karen</h2>
+            <ul>
+              <li><strong>Mandag:</strong> 12:00-16:00</li>
+              <li><strong>Tirsdag:</strong> 12:00-17:00</li>
+              <li><strong>Onsdag:</strong> 12:00-20:00</li>
+              <li><strong>Torsdag:</strong> 12:00-20:00</li>
+              <li><strong>Fredag:</strong> 12:00-16:00</li>
+              <li><strong>Lørdag/Søndag:</strong> Lukket</li>
+            </ul>
+          </section>
+        </div>
+      </section>
     </div>
     <div class="billede3"><img src="/images/kmk1.webp" alt="første billede" /></div>
     <div class="info2">
-      <h3>HEr skal der også stå noget</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo error molestiae, doloremque laborum dignissimos quia omnis, voluptatibus quae laboriosam, earum animi ducimus asperiores
-        consectetur dicta! Vitae temporibus ad illum.
-      </p>
+      <section id="ugens-program">
+        <h2>Ugens program</h2>
+        <ul>
+          <li><strong>Onsdag:</strong> Vegetarisk onsdagsgryde i caféen.</li>
+          <li><strong>Torsdag:</strong> Fællesspisning kl. 18.00.</li>
+          <li><strong>Fredag:</strong> Caféens øvrige arrangementer (fx Vinterjazz koncerter).</li>
+          <li><strong>Andre faste aktiviteter:</strong> Strikkecafé, quizaftener og madboks-arrangementer.</li>
+        </ul>
+      </section>
     </div>
     <div class="billede2"><img src="/images/kmk2.webp" alt="billede2" /></div>
     <div class="info2">
-      <h3>Her skal der enda også stå noget</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum similique odit officiis delectus porro numquam voluptas cumque necessitatibus dolores. Reiciendis ratione assumenda ut dolor
-        nulla. Similique provident quis cupiditate odit.
-      </p>
+      <section id="faellespisning-menu">
+        <h2>Fællesspisningsmenu</h2>
+        <p>Hver torsdag kl. 18.00 inviterer Café Karen til fællesspisning.</p>
+        <p><strong>Menueksempler:</strong></p>
+        <ul>
+          <li>19. februar: Grøn dhal med raita, blomkålshapser, chutney og pappadums</li>
+          <li>26. februar: Boller i karry de luxe med ris</li>
+        </ul>
+        <p>Der er altid et vegetarisk alternativ – husk at bestille på forhånd.</p>
+        <p>Pris: 105 kr for voksne, 50 kr for børn (op til 12 år).</p>
+      </section>
     </div>
   </div>
 </MainLayout>

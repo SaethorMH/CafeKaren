@@ -12,22 +12,31 @@
 </nav>
 
 <style>
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--bgColor);
+    z-index: 2;
+  }
   ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0.75rem 0.75rem 0;
+    padding: 0.75rem 0.75rem 0 2rem;
   }
   li {
     font-size: calc(7.4366197183px + 2.2535211268vw);
     font-family: pgLight;
+    transition: 0.1s ease-in-out;
   }
   li:hover {
     cursor: pointer;
     color: var(--secondary);
+    transform: scale(1.1);
   }
   .selected {
     font-family: pg;
     color: var(--secondary);
+    transform: scale(1.1);
   }
 </style>

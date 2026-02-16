@@ -1,13 +1,24 @@
 .grid-6 {
   display: grid;
+  max-width: 1200px;
+  margin: auto;
   grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  gap: 25px;
+  justify-content: center;
+  place-content: center;
+  /* align-items: center; */
+  div {
+    padding: 20px;
+  }
+  img {
+    border-radius: 5px;
+  }
 }
 .info3 {
-  grid-column: span 3;
+  grid-column: span 2;
 }
 .billede3 {
-  grid-column: span 3;
+  grid-column: span 4;
 }
 .info2 {
   grid-column: span 2;
