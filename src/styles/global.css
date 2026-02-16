@@ -13,6 +13,13 @@ img {
   --primary: #c6a9aa;
   --secondary: #9e4268;
 }
+
+.altFarver {
+  --bgColor: rgb(255, 201, 234);
+  --primary: rgb(0, 104, 0);
+  --secondary: rgb(29, 249, 29);
+}
+
 @font-face {
   font-family: pg;
   src: url("../fonts/protogrotesk-regular.otf") format("opentype");

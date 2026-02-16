@@ -1,9 +1,62 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro"
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/layout.css";
 ---
 
-<MainLayout>
-	<h2>AHHHHHHHHHHHHHH</h2>
-<a href="#">Whatever link</a>
-	npm install
+<MainLayout title="Café Karen - KMK">
+  <button id="altFarve">Alt farve</button>
+  <div style="width: 50px; position:absolute;margin-left:-5rem ">
+    <img src="/images/sidebarScreenShot.webp" alt="placeholder sidebar" />
+  </div>
+  <div style="display:flex;justify-content:space-between">
+    <div>
+      <h3>åbningstider:</h3>
+      <ul><li>mandag:</li><li>tirsdag:</li><li>onsdag:</li><li>torsdag:</li><li>fredag:</li><li>lørdag:</li><li>søndag:</li></ul>
+    </div>
+    <h1>café Karen</h1>
+  </div>
+  <div class="grid-6">
+    <div class="info3">
+      <h2>Her skal der stå noget</h2><p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus minima esse omnis, quasi quae impedit culpa ad sunt sequi iusto assumenda molestiae, ut nesciunt, tenetur nihil dicta eaque
+        unde quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque error mollitia qui? Culpa dolorem aliquam eligendi numquam reprehenderit voluptatibus laborum eum iste,
+        quam, amet sint inventore sit laboriosam sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quae cum molestiae laudantium cupiditate ducimus quasi, aperiam earum autem tenetur
+        eaque nihil culpa eos sapiente! Totam qui doloribus nostrum distinctio?
+      </p>
+    </div>
+    <div class="billede3"><img src="/images/kmk1.webp" alt="første billede" /></div>
+    <div class="info2">
+      <h3>HEr skal der også stå noget</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo error molestiae, doloremque laborum dignissimos quia omnis, voluptatibus quae laboriosam, earum animi ducimus asperiores
+        consectetur dicta! Vitae temporibus ad illum.
+      </p>
+    </div>
+    <div class="billede2"><img src="/images/kmk2.webp" alt="billede2" /></div>
+    <div class="info2">
+      <h3>Her skal der enda også stå noget</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum similique odit officiis delectus porro numquam voluptas cumque necessitatibus dolores. Reiciendis ratione assumenda ut dolor
+        nulla. Similique provident quis cupiditate odit.
+      </p>
+    </div>
+  </div>
 </MainLayout>
+
+<script>
+  const darkmode = document.querySelector("#altFarve");
+  const html = document.querySelector("html");
+  if (localStorage.getItem("dm") == "true") {
+    html?.classList.toggle("altFarver");
+  }
+  function toggleTheme() {
+    console.log("switching color");
+    html?.classList.toggle("altFarver");
+    if (html?.classList.contains("altFarver")) {
+      localStorage.setItem("dm", "true");
+    } else {
+      localStorage.setItem("dm", "false");
+    }
+  }
+  darkmode?.addEventListener("click", toggleTheme);
+</script>

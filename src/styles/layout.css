@@ -1,0 +1,20 @@
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.info3 {
+  grid-column: span 3;
+}
+.billede3 {
+  grid-column: span 3;
+}
+.info2 {
+  grid-column: span 2;
+}
+.billede2 {
+  grid-column: span 2;
+}
+/* div {
+  border: 2px solid orange;
+} */
