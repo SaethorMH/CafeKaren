@@ -15,9 +15,20 @@ img {
 }
 
 .altFarver {
-  --bgColor: rgb(255, 201, 234);
-  --primary: rgb(0, 104, 0);
-  --secondary: rgb(29, 249, 29);
+  --bgColor: #c6a9aa;
+  --primary: #261321;
+  --secondary: #9e4268;
+
+  Footer {
+    img {
+      filter: brightness(0) saturate(100%) invert(9%) sepia(11%) saturate(2490%) hue-rotate(264deg) brightness(93%) contrast(97%);
+    }
+  }
+  .sideBar {
+    img {
+      filter: invert(100%);
+    }
+  }
 }
 
 @font-face {
@@ -51,4 +62,56 @@ a {
 }
 a:hover {
   color: var(--secondary);
+}
+h1 {
+  font-size: 7rem;
+  line-height: 6rem;
+}
+p {
+  max-width: 65ch;
+  text-wrap: auto;
+}
+#abningstider {
+  background-color: var(--bgColor);
+  h2 {
+    font-size: 1.2rem;
+  }
+  font-size: 0.7rem;
+  padding: 5px;
+  border: 2px var(--primary) solid;
+  border-radius: 5px;
+  ul {
+    list-style: none;
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      border: 4px var(--primary);
+      border-bottom: solid;
+    }
+  }
+  transition: 0.5s ease-in-out;
+}
+#abningstider:hover {
+  transform: scale(1.6) translate(0%, 20%);
+}
+
+#sociale {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50vh;
+  right: 20px;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    width: 30px;
+    transform: scale(1.5);
+  }
+  i:hover {
+    color: var(--secondary);
+    cursor: pointer;
+  }
 }
