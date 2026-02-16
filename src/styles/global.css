@@ -8,3 +8,40 @@ img {
   width: 100%;
   height: auto;
 }
+:root {
+  --bgColor: #261321;
+  --primary: #c6a9aa;
+  --secondary: #9e4268;
+}
+@font-face {
+  font-family: pg;
+  src: url("../fonts/protogrotesk-regular.otf") format("opentype");
+}
+@font-face {
+  font-family: pgBold;
+  font-weight: 800;
+  src: url("../fonts/protogrotesk-bold.otf") format("opentype");
+}
+@font-face {
+  font-family: pgLight;
+
+  src: url("../fonts/protogrotesk-light.otf") format("opentype");
+}
+* {
+  font-family: pgLight;
+}
+body {
+  background-color: var(--bgColor);
+  color: var(--primary);
+}
+main {
+  margin: auto;
+  padding: 0 6rem;
+}
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--secondary);
+}

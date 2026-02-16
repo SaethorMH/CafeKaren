@@ -1,3 +1,63 @@
 <footer>
-    <p>her er der footer</p>
+  <div>
+    <h2>Kontakt</h2>
+    <p>Karens Minde Kulturhus<br /> Wagnersvej 19 <br /> 2450 København SV</p>
+    <ul><li>Kort</li><li>Find medarbejder</li><li>Privatlivspolitik</li></ul>
+  </div>
+  <div>
+    <h2>Karens Minde er også</h2>
+    <ul>
+      <li>Sydhavnens bilblotek</li>
+      <li>Børnekulturstedet</li><li>Sydhavn Teater</li>
+      <li>Børnenes Dyremark</li><li>Kgs. Enghave Lokalhistoriske Arkiv</li>
+      <li>Kongens Enghave Lokaludvalg</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Nyhedsbrev</h2>
+    <ul><li>Tilmeld dig her</li></ul>
+  </div>
+  <div>
+    <h2>Bliv frivillig</h2>
+    <p>hele husets eksistens hviler på frivilliges indsats</p>
+    <ul><li>Se hvordan du bliver en af os!</li></ul>
+  </div>
+  <div>
+    <img src="../images/Vin.webp" alt="husets vin logo" />
+    <img src="../images/herslev.webp" alt="Herslevs bryghus logo" />
+    <img src="../images/smil.webp" alt="smil logo" />
+  </div>
 </footer>
+
+<style>
+  img {
+    width: 100px;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+  footer {
+    margin: 0 6rem;
+    border: 2px var(--primary);
+    border-style: solid none none none;
+    display: flex;
+    justify-content: space-between;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  p,
+  li {
+    font-size: 0.85em;
+  }
+  li::before {
+    content: "\2192 ";
+    padding-right: 0.375rem;
+  }
+  li:hover {
+    cursor: pointer;
+    color: var(--secondary);
+  }
+</style>
